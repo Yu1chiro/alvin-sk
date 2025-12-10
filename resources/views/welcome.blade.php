@@ -129,9 +129,9 @@
 
     <nav class="fixed w-full z-50 top-0 backdrop-blur-lg border-b border-gray-100/50 dark:border-gray-800">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="#"
+            <a href=""
                 class="text-2xl font-display font-bold tracking-tighter hover:opacity-70 transition dark:text-white">
-                {{ $setting?->hero_title ?? 'Alvin Sk.' }}
+               Alvin sk
             </a>
 
             <div class="flex items-center gap-6">
@@ -171,19 +171,19 @@
                 style="animation-delay: 0.1s;">
                 Welcome to my life
             </p>
-            <h1 class="text-6xl md:text-8xl lg:text-9xl font-display font-extrabold leading-[0.9] mb-8 text-gray-900 dark:text-white reveal-text"
+            <h1 class="text-6xl font-display font-extrabold leading-[0.9] mb-8 text-gray-900 dark:text-white reveal-text"
                 style="animation-delay: 0.2s;">
                 {{ $setting?->hero_title ?? 'Alvin Sk.' }}
             </h1>
-            <p class="text-xl md:text-3xl text-gray-500 dark:text-gray-400 font-display font-medium max-w-2xl mx-auto leading-tight reveal-text"
+            <p class="text-3xl text-gray-500 dark:text-gray-400 font-display font-medium max-w-2xl mx-auto leading-tight reveal-text"
                 style="animation-delay: 0.3s;">
                 {{ $setting?->hero_subtitle ?? 'Illustrator, Character Designer & Visual Storyteller.' }}
             </p>
 
             <div class="mt-12 reveal-text" style="animation-delay: 0.4s;">
                 <a href="#works"
-                    class="inline-flex items-center gap-3 text-lg font-medium border-b-2 border-black dark:border-white pb-1 hover:gap-5 transition-all dark:text-white">
-                    Explore Selected Works <span>&darr;</span>
+                    class="inline-flex items-center gap-3 animate-bounce text-lg font-medium border-b-2 border-black dark:border-white pb-1 hover:gap-5 transition-all dark:text-white">
+                    Explore my works<span>&darr;</span>
                 </a>
             </div>
         </div>
@@ -235,7 +235,7 @@
                     </div>
                     <div class="w-px bg-gray-300 dark:bg-gray-700"></div>
                     <div class="text-center dark:text-white">
-                        <span class="block text-3xl font-display font-bold">{{ date('Y') - 2020 }}+</span>
+                        <span class="block text-3xl font-display font-bold">{{ date('Y') - 2022 }}+</span>
                         <span class="text-sm text-gray-400 uppercase tracking-wider">Years Exp.</span>
                     </div>
                 </div>
@@ -255,7 +255,7 @@
                             <div
                                 class="w-24 h-24 p-4 bg-gray-50 dark:bg-slate-800 rounded-2xl flex items-center justify-center border border-gray-100 dark:border-gray-700 shadow-sm group-hover:scale-110 transition-transform duration-300">
                                 <img src="{{ $tool->image }}" alt="{{ $tool->name }}"
-                                    class="w-full h-full object-contain">
+                                    class="w-full animate-pulse h-full object-contain">
                             </div>
                             <span
                                 class="text-xs font-medium text-gray-400 group-hover:text-accent opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
@@ -272,12 +272,10 @@
     <section id="works" class="py-32 px-6 max-w-7xl mx-auto">
         <div class="flex justify-between items-end mb-20">
             <div>
-                <span class="text-accent font-medium tracking-widest uppercase text-sm mb-2 block">My Portfolio</span>
+                <span class="text-accent font-medium tracking-widest dark:text-white uppercase text-sm mb-2 block">My Portfolio</span>
                 <h2 class="text-5xl md:text-6xl font-display font-bold dark:text-white">Latest Works</h2>
             </div>
-            <a href="#"
-                class="hidden md:inline-block border-b border-gray-300 dark:border-gray-700 pb-1 hover:border-black dark:hover:border-white transition-colors dark:text-gray-400">View
-                All Archive</a>
+           
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20">
@@ -371,9 +369,9 @@
             <h2 class="text-4xl md:text-6xl font-display font-bold mb-8">Have an idea?</h2>
             <p class="text-gray-400 text-lg mb-10 max-w-xl mx-auto">I'm currently open for commissions and
                 collaborations.</p>
-            <a href="mailto:hello@alvinsk.com"
+            <a href="https://ig.me/m/alvinsk_21"
                 class="inline-block px-10 py-4 bg-white dark:bg-blue-500 dark:text-white text-black font-bold rounded-full text-lg hover:scale-105 transition-transform">
-                Let's Talk via Email
+                Talk me on Instagram
             </a>
 
             <div

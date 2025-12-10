@@ -37,10 +37,8 @@ class User extends Authenticatable implements FilamentUser
     // Fungsi ini yang bertugas membuka pintu gerbang di Production.
     public function canAccessPanel(Panel $panel): bool
     {
-        // Ganti 'email_anda@gmail.com' dengan email yang SUDAH Anda daftarkan.
      return $this->email === 'yukasan2005@gmail.com';
-        
-        // Atau jika ingin membolehkan SEMUA user masuk (Hati-hati!):
+        //gunakan return true ini opsional for fast access nonatkfikasn fungsi registration
         // return true; 
     }
 }
