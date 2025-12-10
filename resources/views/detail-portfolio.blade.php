@@ -60,7 +60,9 @@
                 Back to Home</a>
         </div>
     </nav>
-
+{{-- ok --}}
+{{-- ok --}}
+{{-- ok --}}
     <main class="max-w-5xl mx-auto py-12 px-6">
         <h1 class="text-4xl md:text-5xl font-serif font-bold mb-8 leading-tight dark:text-white">{{ $project->title }}
         </h1>
