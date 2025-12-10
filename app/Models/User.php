@@ -38,7 +38,7 @@ class User extends Authenticatable implements FilamentUser
     public function canAccessPanel(Panel $panel): bool
     {
         // Ganti 'email_anda@gmail.com' dengan email yang SUDAH Anda daftarkan.
-     return $this->email === 'yukasa2005@gmail.com';
+     return $this->email === 'yukasan2005@gmail.com';
         
         // Atau jika ingin membolehkan SEMUA user masuk (Hati-hati!):
         // return true; 
