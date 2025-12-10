@@ -13,11 +13,10 @@
     ],
     "public": true,
     "buildCommand": "vite build",
-    "outputDirectory": "public",
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
-        "APP_URL": "https://alvin-sk.vercel.app", 
+        "APP_URL": "",
         "APP_KEY": "base64:qachpX1CJjkj79Tlb0X5xJDffsxKFI6frexoFGqzJs0=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
