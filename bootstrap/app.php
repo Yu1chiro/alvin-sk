@@ -3,7 +3,6 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
-use App\Http\Middleware\TrackVisitor; // Import di atas
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -12,11 +11,6 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-
-        // Tambahkan baris ini di dalam append:
-        $middleware->web(append: [
-            TrackVisitor::class,
-        ]);
 
     })
     ->withExceptions(function (Exceptions $exceptions) {

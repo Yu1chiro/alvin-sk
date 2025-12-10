@@ -4,7 +4,6 @@ namespace App\Filament\Widgets;
 
 use App\Models\Project;
 use App\Models\Article; // Model Blog
-use App\Models\Visitor; // Model Pengunjung
 use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 
@@ -28,14 +27,9 @@ class StatsOverview extends BaseWidget
                 ->description('Blog posts published')
                 ->descriptionIcon('heroicon-m-document-text')
                 ->color('warning')
-                ->chart([3, 5, 8, 2, 10, 15, 20]),
+                ->chart([3, 5, 8, 2, 10, 15, 20])
 
-            // Stats 3: Visitor (Baru)
-            Stat::make('Unique Visitors', Visitor::count())
-                ->description('Tracked by Unique IP')
-                ->descriptionIcon('heroicon-m-user-group')
-                ->color('success')
-                ->chart([1, 5, 10, 20, 15, 30, 50]),
+           
         ];
     }
 }

@@ -16,11 +16,7 @@ Route::get('/', function () {
     // Kirim variable $articles ke view
     return view('welcome', compact('setting', 'projects', 'articles', 'tools'));
 });
-// Route Darurat untuk Migrate Database di Vercel
-Route::get('/run-migration', function () {
-    \Illuminate\Support\Facades\Artisan::call('migrate --force');
-    return 'Migration Berhasil! Silakan hapus route ini kembali.';
-});
+
 Route::get('/project/{slug}', function ($slug) {
     $project = Project::where('slug', $slug)->firstOrFail();
     $setting = Setting::first();
