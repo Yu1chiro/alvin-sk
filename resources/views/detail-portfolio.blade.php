@@ -56,7 +56,8 @@
     <nav
         class="p-6 sticky top-0 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md z-50 border-b border-gray-100 dark:border-gray-800">
         <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <a href="/" class="font-bold text-lg text-accent hover:opacity-70 transition">&larr; Back to Home</a>
+            <a href="/" class="font-bold text-lg text-accent hover:opacity-70 transition dark:text-white">&larr;
+                Back to Home</a>
         </div>
     </nav>
 

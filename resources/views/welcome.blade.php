@@ -278,7 +278,7 @@
            
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-20">
             @foreach ($projects as $project)
                 <a href="{{ route('project.detail', $project->slug) }}" class="group block">
                     <div

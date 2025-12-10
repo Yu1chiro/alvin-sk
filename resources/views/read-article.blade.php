@@ -39,9 +39,9 @@
     <nav
         class="p-6 sticky top-0 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md z-50 border-b border-gray-100 dark:border-gray-800">
         <div class="max-w-4xl mx-auto flex justify-between items-center">
-            <a href="/" class="font-bold text-lg hover:text-accent transition dark:text-white">&larr; Back to
-                Home</a>
-            <span class="text-sm text-gray-400">Blog Article</span>
+            <a href="/" class="font-bold text-lg text-accent hover:opacity-70 transition dark:text-white">&larr;
+                Back to Home</a>
+
         </div>
     </nav>
 
