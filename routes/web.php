@@ -16,7 +16,11 @@ Route::get('/', function () {
     // Kirim variable $articles ke view
     return view('welcome', compact('setting', 'projects', 'articles', 'tools'));
 });
-
+// Tambahkan di routes/web.php
+Route::get('/clear-cache', function () {
+    Artisan::call('optimize:clear');
+    return '<h1>Cache Cleared!</h1><pre>' . Artisan::output() . '</pre>';
+});
 Route::get('/project/{slug}', function ($slug) {
     $project = Project::where('slug', $slug)->firstOrFail();
     $setting = Setting::first();

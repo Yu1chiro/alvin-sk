@@ -27,7 +27,7 @@ class AdminPanelProvider extends PanelProvider
             ->id('admin')
             ->brandName('Welcome Alvin!')
             ->path('admin')
-            // ->registration()
+            ->registration()
             ->login()
             ->spa()
             ->colors([
